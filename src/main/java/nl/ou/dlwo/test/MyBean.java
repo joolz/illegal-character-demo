@@ -15,11 +15,8 @@ public class MyBean implements Serializable {
 	}
 
 	public String getSomeValue() {
-		System.out.println("get some value that contains spaces");
-		return "some value that contains spaces"
-				
-				// Workaround FACES-2958
-				.replace(" ", "+");
+		System.out.println("get some text value that contains spaces");
+		return "return some text value that contains spaces";
 	}
 
 }
